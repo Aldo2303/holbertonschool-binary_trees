@@ -21,6 +21,10 @@ if (tree->left == NULL && tree->right != NULL)
 {
 return (-2);
 }
+if (tree->left == NULL && tree->right == NULL)
+{
+count += 2;
+}
 return (count + 1);
 }
 
@@ -46,6 +50,10 @@ if (tree->left == NULL && tree->right != NULL)
 {
 return (-2);
 }
+if (tree->left == NULL && tree->right == NULL)
+{
+count += 2;
+}
 return (count + 1);
 }
 
@@ -63,11 +71,10 @@ if (tree == NULL)
 {
 return (0);
 }
+if (tree->left != NULL && tree->right != NULL)
+{
 count1 = countleft(tree->left);
 count2 = countright(tree->right);
-if (count1 == 0 && count2 == 0)
-{
-return (0);
 }
 if (count1 != count2)
 {
