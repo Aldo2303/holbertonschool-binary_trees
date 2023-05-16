@@ -10,8 +10,10 @@ int count = 0;
 
 if (tree->left != NULL && tree->right != NULL)
 {
-count = 1 + countleft(tree->left);
-count = 1 + countleft(tree->right);
+count += 1; 
+countleft(tree->left);
+count += 1;
+countleft(tree->right);
 }
 /*
 if (tree->left != NULL && tree->right == NULL)
@@ -37,8 +39,10 @@ int count = 0;
 
 if (tree->left != NULL && tree->right != NULL)
 {
-count = 1 + countright(tree->left);
-count = 1 + countright(tree->right);
+count += 1;
+countright(tree->left);
+count += 1;
+countright(tree->right);
 }
 /*
 if (tree->left != NULL && tree->right == NULL)
