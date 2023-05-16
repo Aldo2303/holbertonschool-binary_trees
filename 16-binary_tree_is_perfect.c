@@ -15,13 +15,13 @@ count = 1 + countleft(tree->right);
 }
 if (tree->left != NULL && tree->right == NULL)
 {
-return (0);
+return (-2);
 }
 if (tree->left == NULL && tree->right != NULL)
 {
-return (0);
+return (-2);
 }
-return (count);
+return (count + 1);
 }
 
 /**
@@ -40,13 +40,13 @@ count = 1 + countright(tree->right);
 }
 if (tree->left != NULL && tree->right == NULL)
 {
-return (0);
+return (-2);
 }
 if (tree->left == NULL && tree->right != NULL)
 {
-return (0);
+return (-2);
 }
-return (count);
+return (count + 1);
 }
 
 /**
@@ -65,6 +65,10 @@ return (0);
 }
 count1 += countleft(tree->left);
 count2 += countright(tree->right);
+if (count1 == 0 && count2 == 0)
+{
+return (0);
+}
 if (count1 != count2)
 {
 return (0);
