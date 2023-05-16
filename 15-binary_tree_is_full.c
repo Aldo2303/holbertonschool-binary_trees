@@ -18,7 +18,7 @@ if (tree->left != NULL && tree->right != NULL)
 check1 = binary_tree_is_full(tree->left);
 check2 = binary_tree_is_full(tree->right);
 }
-if(tree->left != NULL && tree->right == NULL)
+if (tree->left != NULL && tree->right == NULL)
 {
 return (0);
 }
