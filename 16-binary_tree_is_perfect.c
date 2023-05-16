@@ -15,11 +15,11 @@ count = 1 + countleft(tree->right);
 }
 if (tree->left != NULL && tree->right == NULL)
 {
-count = 1 + countleft(tree->left);
+return (0);
 }
 if (tree->left == NULL && tree->right != NULL)
 {
-count = 1 + countleft(tree->right);
+return (0);
 }
 return (count);
 }
@@ -40,11 +40,11 @@ count = 1 + countright(tree->right);
 }
 if (tree->left != NULL && tree->right == NULL)
 {
-count = 1 + countright(tree->left);
+return (0);
 }
 if (tree->left == NULL && tree->right != NULL)
 {
-count = 1 + countright(tree->right);
+return (0);
 }
 return (count);
 }
