@@ -22,7 +22,7 @@ if (tree->left == NULL && tree->right != NULL)
 count = 1 + countleft(tree->right);
 }
 
-return (count);
+return (count + 1);
 }
 
 /**
@@ -47,7 +47,7 @@ if (tree->left == NULL && tree->right != NULL)
 {
 count = 1 + countright(tree->right);
 }
-return (count);
+return (count + 1);
 }
 
 /**
