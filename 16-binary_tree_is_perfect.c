@@ -63,8 +63,8 @@ if (tree == NULL)
 {
 return (0);
 }
-count1 += countleft(tree->left);
-count2 += countright(tree->right);
+count1 = countleft(tree->left);
+count2 = countright(tree->right);
 if (count1 == 0 && count2 == 0)
 {
 return (0);
